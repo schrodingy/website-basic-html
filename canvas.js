@@ -25,3 +25,13 @@ for(var i = 0; i < 20; i++){
   c.strokeStyle = "blue";
   c.stroke();
 }
+
+for(var i = 0; i < 20; i++){
+  x = Math.random() * window.innerWidth;
+  y = Math.random() * window.innerHeight;
+
+  c.beginPath();
+  c.arc(x, y, 30, Math.PI, -Math.PI, false);
+  c.strokeStyle = "red";
+  c.stroke();
+}
