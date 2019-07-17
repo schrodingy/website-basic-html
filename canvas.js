@@ -19,7 +19,9 @@ c.lineTo(400, 300);
 c.strokeStyle = "#fa34a3";
 c.stroke();
 
-c.beginPath();
-c.arc(300, 300, 30, Math.PI, -Math.PI, false);
-c.strokeStyle = "blue";
-c.stroke();
+for(var i = 0; i < 20; i++){
+  c.beginPath();
+  c.arc(300 + i, 300 + i, 30, Math.PI, -Math.PI, false);
+  c.strokeStyle = "blue";
+  c.stroke();
+}
